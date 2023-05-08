@@ -42,10 +42,10 @@ For both browser options, the argument headless was added so that the browser wi
  
  # Selenium 4.9.0 Error !!!
  
- Attempting to run my code, I found an error that seems to be due to an inappropriate object inheritence in selenium 4.9.0: AttributeError: 'Options' object has no attribute '_ignore_local_proxy'
+ Attempting to run my code, I found an error that seems to be due to an inappropriate object inheritence in selenium 4.9.0:** AttributeError:** _'Options' object has no attribute '_ignore_local_proxy'_
  
  This was fixed by applying minor changes to  selenium/webdriver/chromium/webdriver.py and selenium/webdriver/remote/webdriver.py (commenting the 2 lines causing the issue).
- The updated 2 files are found in this repository, so if run into this error you may navigate to your selenium package folder and substitue them by the ones in this repository, or the lines specified in the error could be fixed. 
+ The updated 2 files are found in this repository as remote_webdriver.py (webdriver.py of the directory remote within selenium) and chromium_webdriver.py (webdriver.py of the directory chromium within selenium), so if run into this error you may navigate to your selenium package folder and substitue them accordingly by the ones in this repository, or the lines specified in the error could be fixed. 
 
 # Submitted files
  

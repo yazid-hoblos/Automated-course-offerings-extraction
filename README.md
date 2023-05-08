@@ -38,7 +38,8 @@ For both browser options, the argument headless was added so that the browser wi
  
  The output csv data could be found in this repository and it is outputted as output.csv. Some courses were found to occupy 2 rows, since they have a lab part in addition to the course part, so another csv file (mutated_data.csv) was created to merge the rows of these classes into one. In addition, this mutated dataset applies some changes to the column names to be more understandable.
 
-
+ The output files output.csv and mutated_data.csv should be found in the same directory of run.py one the execution is completed.
+ 
  # Selenium 4.9.0 Error !!!
  
  Attempting to run my code, I found an error that seems to be due to an inappropriate object inheritence in selenium 4.9.0: AttributeError: 'Options' object has no attribute '_ignore_local_proxy'
@@ -46,3 +47,10 @@ For both browser options, the argument headless was added so that the browser wi
  This was fixed by applying minor changes to  selenium/webdriver/chromium/webdriver.py and selenium/webdriver/remote/webdriver.py (commenting the 2 lines causing the issue).
  The updated 2 files are found in this repository, so if run into this error you may navigate to your selenium package folder and substitue them by the ones in this repository, or the lines specified in the error could be fixed. 
 
+# Submitted files
+ 
+ The file submission.py is the initial code all within 1 file.
+ Atomic commits were also submitted: run.py / read_arguments.py / interaction_mode.py / no_interaction_mode.py / navigate_url.py / output_csv.py
+ To execute the script you must have all of them whithin same directory, and execute python3 run.py <-i>(optional) <username> <password>
+ 
+ 

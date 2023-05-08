@@ -9,7 +9,7 @@ Accessing the website and navigating it to get to the course offerings page was 
 
 # Running the script
 
-Mode 1: python3 submission.py <username> <password>
+Mode 1: python3 run.py <username> <password>
  
 The initial code uses microsoft edge through selenium. This is the version executed by running the script without the argument -i (interactive). This will proceed without asking the user for any input, assuming that the user has the microsoft edge browser (binary) downloaded and present in its default location. As for the driver, it will proceed to download it through the code.
 
@@ -19,7 +19,7 @@ The microsoft edge browser was downloaded to the terminal using the commands:
      sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-dev.list'
      sudo apt-get install microsoft-edge-dev
  
-Mode 2: python3 submission.py -i <username> <password>
+Mode 2: python3 run.py -i <username> <password>
  
 Adding an argument -i (interactive) will allow the user to choose between chrome and microsoft edge, and to specify the path for the browser it it is not in its default location.
 If microsoft edge is chosen the user will be asked for the paths of the edge browser (binary) and driver.
